@@ -6,9 +6,9 @@ body{
 /* styling menu icon */
 .nav-menu{
     border: none;
-    background-color: #fff;
+    background-color: #151925;
     font-size: 1.5rem;
-    color: #fca61f;
+    color: #01eeff;
 }
 /* styling navbar links  */
 .navbar-nav a{
@@ -411,10 +411,47 @@ footer .link-group a:hover{
 #btn-back-to-top {
     position: fixed;
     bottom: 40px;
+    border: 1px solid #01eeff;
     right: 40px;
     display: none;
     font-size: 1.4rem;
-    background-color: #fca61f;
-    color: #fff;
+    background-color: #151925;
+    color: #01eeff;
     animation: pulse 3s infinite;
+}
+#btn-back-to-top:hover{
+    background-color: #01eeff;
+    color: #151925;
+    filter: drop-shadow(0 0 10px #01eeff);
+}
+
+.about-us{
+  border: 1px solid #01eeff;
+  border-radius: 10px;
+}
+
+
+/* gpt code */
+
+/* media query */
+
+@media (max-width: 956px) {
+    .about-us{
+        margin: 10px 0 !important;
+    }
+    .skils{
+        margin: 1rem !important;
+        width: 20rem;
+    }
+    .project-card{
+        margin: 1rem !important;
+        width: 20rem;
+    }
+    h2,h3{
+        font-size: 25px !important;
+    }
+    p{
+        font-size: 18px !important;
+        font-weight: 400 !important;
+    }
 }
