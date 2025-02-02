@@ -455,3 +455,130 @@ footer .link-group a:hover{
         font-weight: 400 !important;
     }
 }
+
+
+
+
+
+
+
+/* Ensure proper scaling on mobile devices */
+meta[name="viewport"] {
+    content: "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no";
+  }
+  
+  /* Expertise section styles */
+  .expertise .service-card {
+    text-align: center;
+    padding: 15px;
+    border-radius: 0.7rem;
+    margin-bottom: 30px;
+  }
+  
+  /* For Mobile, center items or space them out */
+  @media (max-width: 767px) {
+    .expertise .service-card {
+      margin-bottom: 20px;
+      padding: 20px;
+    }
+  
+    .expertise .service-card img {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .expertise {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Adjust for better alignment */
+    }
+  }
+  
+  /* Portfolio section styles */
+  .portfolio .portfolio-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;  /* For larger screens */
+  }
+  
+  /* Mobile responsiveness for portfolio section */
+  @media (max-width: 767px) {
+    .portfolio .portfolio-section {
+      justify-content: center;  /* Center items on smaller screens */
+      width: 100%;  /* Ensure it takes full width */
+      margin: 0 auto;
+    }
+  
+    .portfolio .progress-card {
+      width: 80%;
+      margin: 15px 0;
+    }
+  }
+  
+  /* Skill section styles */
+  .skill .progress-card {
+    padding: 12% 10% 10% 15%;
+    background-color: #151925;
+    text-align: center;
+    border-radius: 10%;
+    border: 1px solid #01eeff;
+    color: #eee;
+  }
+  
+  /* Mobile responsiveness for skill section */
+  @media (max-width: 767px) {
+    .skill {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Align skill items for mobile */
+    }
+  
+    .progress-card {
+      margin-bottom: 20px;
+      padding: 15% 5%;
+      width: 90%;  /* Ensure it doesn't overflow on small screens */
+    }
+  
+    .progress-card img {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .text {
+      font-size: 1rem;
+    }
+  }
+  
+  /* General mobile fixes to prevent overflow */
+  @media (max-width: 767px) {
+    body, html {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;  /* Prevent horizontal scroll */
+    }
+  
+    .container {
+      width: 100%;
+      padding: 0 10px; /* Prevent content from overflowing */
+    }
+  
+    .card {
+      width: 100%; /* Make sure cards fit on mobile */
+      box-sizing: border-box;
+    }
+  
+    img {
+      max-width: 100%;  /* Ensure images scale properly */
+      height: auto;
+    }
+  
+    h1, h2, h3, h4, h5 {
+      font-size: 1.5rem; /* Scale down headers for smaller screens */
+    }
+  
+    p {
+      font-size: 1rem; /* Adjust text size */
+    }
+  }
+  
